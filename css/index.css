@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra{
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all 0.2s linear;
+    left: -240px;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+.botao-opcao{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.opcao{
+    background-color: #494949;
+    padding: 20px;
+    font-family: "Arial";
+    font-size: 12pt;
+    transition: all 0.2s linear;
+    color: #f4f4f9;
+    text-align: left;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.opcao:hover{
+    background-color: #050542;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(240px);
+}
+
+#check:checked ~ .barra nav .botao-opcao .opcao{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.2s;
+}
