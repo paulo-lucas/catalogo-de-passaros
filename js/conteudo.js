@@ -1,8 +1,6 @@
 // atribui o evento de carregar as informações de cada passaro ao respectivo botão 
 function adicionaEvento(passaro, i = 0){
     var botoes = document.querySelectorAll(".botao-opcao");
-    console.log(botoes[i]);
-    console.log(i)
     botoes[i].addEventListener("click", function(){
         carregaConteudo(passaro);
         destacaBotao(i-1);
