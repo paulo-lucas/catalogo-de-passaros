@@ -4,10 +4,10 @@
 }
 
 body{
-    background-color: #f9f9f9; 
+    background-color: #CCC5B9; 
 }
 
-#titulo, .opcao, #nome-passaro, #nome-cientifico, #descobrimento, .nome-paragrafo, .p-info{
+#titulo, .opcao, #nome-passaro, #nome-cientifico, #descobrimento, .nome-paragrafo, .info-p{
     font-family: Verdana, Geneva, sans-serif;
 }
 
@@ -33,7 +33,7 @@ body{
 }
 
 .barra{
-    background-color: #333;
+    background-color: #1f2421;
     height: 100%;
     width: 300px;
     position: absolute;
@@ -60,18 +60,22 @@ nav{
     opacity: 1;
 }
 
+button:focus{
+    outline: none;
+}
+
 .opcao{
-    background-color: #494949;
+    background-color: #4F5356;
     padding: 20px;
     font-size: 12pt;
     color: #f4f4f9;
     text-align: left;
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid #1f2421;
     transition: all 0.2s linear;
 }
 
 .opcao:hover{
-    background-color: #050542;
+    background-color: #CCC5B9;
 }
 
 #check:checked ~ .barra{
@@ -86,14 +90,14 @@ nav{
 /* estilos do conteúdo */
 
 .container{
-    background-color: lightgrey;
+    background-color: #DCE1DE;
     width: 970px;
     height: 100vh;
     margin: 0 auto;
 }
 
 #nome-passaro{
-    padding-top: 40px;
+    padding-top: 60px;
     margin: 0 20px 10px 20px;
     border-bottom: 1px solid grey;
 }
@@ -113,6 +117,6 @@ nav{
     margin-left: 20px;
 }
 
-.p-info{
+.info-p{
     margin: 5px 20px 40px 20px;
 }

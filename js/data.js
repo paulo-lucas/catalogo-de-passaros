@@ -1,7 +1,7 @@
 
 var passaros = [
     {
-        id: 1,
+        id: 0,
         nome: "Saí-andorinha",
         nomeCientifico: "Tersina viridis",
         descobrimento: "(Illiger, 1811)",
@@ -11,7 +11,7 @@ var passaros = [
         alimentacao: "Alimenta-se de frutos e insetos."
     },
     {
-        id: 2,
+        id: 1,
         nome: "Anu-branco",
         nomeCientifico: "Guira guira",
         descobrimento: "(Gmelin, 1788)",
@@ -21,7 +21,7 @@ var passaros = [
         alimentacao: "São essencialmente carnívoros, comendo diversos insetos. Predam também camundongos e filhotes de outras aves. Periodicamente comem frutas, bagas, coquinhos e sementes, sobretudo na época seca quando há escassez de artrópodes."
     },
     {
-        id: 3,
+        id: 2,
         nome: "Gavião-carijó",
         nomeCientifico: "Rupornis magnirostris",
         descobrimento: "(Gmelin, 1788)",
@@ -31,7 +31,7 @@ var passaros = [
         alimentacao: "Artrópodes, pequenos vertebrados e outras aves."
     },
     {
-        id: 4,
+        id: 3,
         nome: "Carcará",
         nomeCientifico: "Caracara plancus",
         descobrimento: "(Miller, 1777)",
@@ -41,7 +41,7 @@ var passaros = [
         alimentacao: "Come de tudo! Desde grãos até pequenos vertebrados, além de carcaças de animais."
     },
     {
-        id: 5,
+        id: 4,
         nome: "Carrapateiro",
         nomeCientifico: "Milvago chimachima",
         descobrimento: "(Vieillot, 1816)",
@@ -51,7 +51,7 @@ var passaros = [
         alimentacao: "Parasitas externos de bovinos e equinos, invertebrados, pequenos vertebrados, carniça e frutos."
     },
     {
-        id: 6,
+        id: 5,
         nome: "Quiriquiri",
         nomeCientifico: "Falco sparverius",
         descobrimento: "(Linnaeus, 1758)",

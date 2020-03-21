@@ -1,17 +1,11 @@
-var passaros = getData();
-var menu = document.querySelector("#menu");
-
-//setta evento de transição dos botões
-var check = document.querySelector("#check");
-check.addEventListener("click", fadeInOutBotoes);
-
-//itera menu
-passaros.forEach(function(passaro){
+//cria um itens do menu
+function iteraMenu(passaro){
+    var menu = document.querySelector("#menu");
     var botao = criaBotao();
     var div = criaDiv(passaro.nome);
     botao.appendChild(div);
     menu.appendChild(botao);
-});
+}
 
 //evento de transição dos botões
 function fadeInOutBotoes(){
