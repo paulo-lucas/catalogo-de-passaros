@@ -14,7 +14,7 @@ function fadeInOutBotoes(){
     var id = setInterval(function(){
         opcoes[i].classList.toggle("botao-visivel");
         i++;
-        if(i == opcoes.length){ clearInterval(id); }
+        if(i == opcoes.length){ fadeInOutBarra(); clearInterval(id); }
     }, 50);
 }
 
@@ -29,4 +29,10 @@ function criaDiv(nomePassaro){
     div.classList.add("opcao");
     div.innerHTML = nomePassaro;
     return div;
+}
+
+function fadeInOutBarra(){
+    var barra = document.querySelectorAll(".barra")
+    barra[0].classList.toggle("barra-visivel");
+    
 }

@@ -24,6 +24,7 @@ body{
     top: 20px;
     font-size: 1em;
     transition: all 0.2s linear;
+    z-index: 2;
 }
 
 #check{
@@ -31,19 +32,35 @@ body{
 }
 
 #icone{
+    
     cursor: pointer;
     padding: 15px;
+    border-radius: 100%;
+    background-color: rgba(31,36,33, 0.5);
+    transform: scale(0.8);
+    transition: all .2s linear;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 
+#check:hover ~ #icone{
+    transform: scale(1);
+
+}
+
 .barra{
-    background-color: #1f2421;
+    
     height: 100%;
     width: 300px;
     position: fixed;
     transition: all 0.2s linear;
-    left: -240px;
+    left: -300px;
+}
+
+.barra-visivel{
+    background-color: #1f2421;
 }
 
 nav{
@@ -57,7 +74,7 @@ nav{
     width: 100%;
     border: none;
     background-color: #4F5356;
-    border-bottom: 2px solid #1f2421;
+    border-bottom: 2px solid transparent;
     transition: all 0.2s linear;
     opacity: 0;
 }
@@ -82,7 +99,14 @@ button:focus{
 }
 
 #check:checked ~ .barra{
-    transform: translateX(240px);
+    transform: translateX(300px);
+}
+
+#check:checked ~ #icone{
+    transform: scale(1);
+    border-radius: 0;
+    background-color: rgba(31,36,33);
+    padding-right: 252px;
 }
 
 #check:checked ~ #titulo{
@@ -98,6 +122,10 @@ button:focus{
     height: 100%;
     margin: 0 auto;
     padding: 10px;
+}
+
+#imagem-passaro{
+    width: 100%;
 }
 
 #nome-passaro{
@@ -126,15 +154,12 @@ button:focus{
 }
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:540px){
 
     .container{
         width: 100vw;
         margin: 0;
         padding: 0 0 1em 0;
-    }
-    #imagem-passaro{
-        width: 100%;
     }
 
     #titulo{
@@ -150,6 +175,9 @@ button:focus{
         width: 240px;
     }
 
+    #check:checked ~ #icone{
+        padding-right: 192px;
+    }
 
     h1{
         text-align: center;
