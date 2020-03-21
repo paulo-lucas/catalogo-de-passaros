@@ -21,7 +21,7 @@ body{
 #titulo{
     position: absolute;
     left: 70px;
-    top: 17px;
+    top: 20px;
     font-size: 1em;
     transition: all 0.2s linear;
 }
@@ -139,6 +139,11 @@ button:focus{
 
     #titulo{
         display: none;
+        font-size: 80%;
+    }
+
+    #check:checked ~ #titulo{
+        display: inline;
     }
 
     .barra{
